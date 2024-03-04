@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>YATRI.IN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  
+</head>
+<body className='snippet-body'>
+                                
+
+
+
+<!--Div for Background-->
+<div class="bg text-center">
+  
+  <!--Div for Centered Text & Input--> 
+  <div class="centered">
+    <img class="am" src="{{ url_for('static', filename='images/ab.png') }}" alt="Logo">
+     <p class="firstLine"> Y &nbsp; A &nbsp; T &nbsp; R &nbsp; I &nbsp; . &nbsp; I &nbsp; N </p>
+    <br>
+ 
+      <form action="/" method="post">
+          <label class="firstLine1" for="first_name">SOURCE:</label>
+          <input class="InputStyle" type="text" id="first_name" name="first_name"><br><br>
+          <label  class="firstLine2"for="last_name">DESTINATION:</label>
+          <input class="InputStyle"type="text" id="last_name" name="last_name"><br><br>
+          <input class="InputStyle"type="submit" value="Submit">
+   
+        
+      </form>
+    <h1 class="firstLine">YOUR CONNECTION ROUTE ARE HERE</h1>
+    <!-- Render the DataFrame HTML table -->
+    <div class="abc" >  {{ table | safe }}</div>
+
+
+    </div>
+    
+
+    <!--Div for bottom Icons-->
+ </body>
+ </html>
